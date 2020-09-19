@@ -1,0 +1,28 @@
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 70%;
+    margin: 20px 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .title{
+        width: auto;
+    }
+    
+    span{
+        margin: 20px 0px;
+        font-size: 18px;
+    }
+
+    .sign-up-form{
+        width: 100%;
+        padding: 20px 0px;
+        button{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+}

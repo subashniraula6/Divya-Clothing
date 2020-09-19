@@ -1,0 +1,22 @@
+.collection-preview {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+   
+    .title {
+      font-size: 28px;
+      margin-bottom: 25px;
+
+    }
+  
+    .preview {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      min-width: 60%;
+      flex-wrap: wrap;      
+    }
+  }
+  
