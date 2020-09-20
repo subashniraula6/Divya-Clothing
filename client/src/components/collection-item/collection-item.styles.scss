@@ -16,28 +16,29 @@
       background-size: cover;
       background-position: center;
       margin-bottom: 5px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 0 lightblue ;
     }
 
-    .custom-button {
+    .CustomButton {
       position: absolute;
-      bottom: 40px;
-      left: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
       opacity: 0.6;
-      display: none; 
+      display: none;
     }
 
     &:hover{
       .image{
         opacity: 0.9;  
         }
-      .custom-button{
+      .CustomButton{
         opacity: 0.75;
-        background-color: white;
         display: flex;
         }
       }
-    
-  
+     
     .collection-footer {
       width: 90%;
       height: 5%;
@@ -45,7 +46,6 @@
       justify-content: space-between;
       font-size: 18px;
       
-
       .name {
         width: 90%;
         margin-bottom: 15px;
