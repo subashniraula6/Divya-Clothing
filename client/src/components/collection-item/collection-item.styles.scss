@@ -1,14 +1,25 @@
 .collection-item {
-    width: 265px;
+    width: 21vw;
     display: flex;
     flex-direction: column;
     height: 350px;
     align-items: center;
     padding: 5px;
-    min-width: 80px;
-    margin: 10px 2px;
+    margin: 10px 10px;
     color: #454849;
     position: relative;
+
+    @media screen and (max-width: 800px){
+      width: 40vw;
+      &:hover {
+        .image {
+          opacity: unset;
+        }
+        button {
+          opacity: unset;
+        }
+      }
+    }
   
     .image {
       width: 100%;
@@ -17,7 +28,7 @@
       background-position: center;
       margin-bottom: 5px;
       border-radius: 5px;
-      box-shadow: 5px 5px 0 lightblue ;
+      box-shadow: 5px 5px 0 lightgrey ;
     }
 
     .CustomButton {
@@ -27,6 +38,13 @@
       transform: translate(-50%);
       opacity: 0.6;
       display: none;
+      width: 10px;
+
+      @media screen and (max-width: 800px){
+        display: block;
+        min-width: 135px;
+        padding: 0 10px;
+      }
     }
 
     &:hover{
@@ -54,7 +72,7 @@
   
       .price {
         width: 10%;
-      }
+      }      
     }
   }
   

@@ -1,15 +1,22 @@
-body{
-  padding: 15px 15px;
-  
+body {
+  padding: 15px 40px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 10px;
+  }
 }
 a {
   text-decoration: none;
   color: black;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
+
 .App {
-  width:100%;
+  width: 100%;
   position: relative;
 }
