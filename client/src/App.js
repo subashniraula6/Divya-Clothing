@@ -17,6 +17,7 @@ import { checkUserSession } from './redux/user/user.actions'
 import { createStructuredSelector } from 'reselect'
 import { selectCurrentUser } from './redux/user/user-selectors'
 
+import ContactPage from './components/pages/contact/contact-page.component'
 
 const App = ({ checkUserSession, currentUser }) => {
   
@@ -30,6 +31,7 @@ const App = ({ checkUserSession, currentUser }) => {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
+          <Route path="/contact" component={ContactPage} />
           <Route exact path="/signin" render={() => currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)} />
           <Route exact path="/checkout" component={CheckoutPage} />
         </Switch>
