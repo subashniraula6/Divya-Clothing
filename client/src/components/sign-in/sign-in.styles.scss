@@ -1,5 +1,5 @@
 .sign-in{
-    width: 30%;
+    width: 35%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -20,13 +20,21 @@
     }
 
     form{
-        width: 70%;
+        width: 100%;
 
         button{
-            display: flex;
+            display: inline;
+            border: 2px solid green;
+
+            @media screen and (max-width: 465px){
+                margin-left: 50%;
+                transform: translate(-50%);
+            }
         }
     }
    
-  
+    @media screen and (max-width: 800px) {
+        width: 90%;
+    }
    
 }

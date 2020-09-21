@@ -22,7 +22,11 @@
         button{
             position: relative;
             left: 50%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, 20%);
         }
     }
+    @media screen and (max-width: 800px) {
+        width: 90%;
+    }
 }
+
