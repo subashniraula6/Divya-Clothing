@@ -20,7 +20,6 @@ export const HeaderContainer = styled.div`
         width: 100%;
         padding: 10px;
         margin-bottom: 20px;
-        border: 2px solid green;
     }
 `;
 

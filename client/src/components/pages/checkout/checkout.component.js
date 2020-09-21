@@ -15,36 +15,37 @@ import StripeCheckoutButton from '../../stripe-button/stripe-button.component'
 const CheckoutPage = ({ cartItems, cartTotal }) => {
     return (
         <div className="checkout-page">
-            <div className="checkout-header">
-                <div className="header-block">
+            <div className="checkout-header row">
+                <div className="header-block product">
                     <span> Product </span>
                 </div>
-                <div className="header-block">
+                <div className="header-block description">
                     <span> Description </span>
                 </div>
-                <div className="header-block">
+                <div className="header-block quantity">
                     <span> Quantity </span>
                 </div>
-                <div className="header-block">
+                <div className="header-block price">
                     <span> Price </span>
                 </div>
-                <div className="header-block">
+                <div className="header-block remove">
                     <span> Remove </span>
                 </div>
             </div>
-            
-            {
-                cartItems.map((cartItem) => {
-                    return <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-                })
 
-            }
+            {
+                    cartItems.map((cartItem) => {
+                        return <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+                    })
+
+                }
+
             <div className="total">
                 <span>Total: ${cartTotal} </span>
             </div>
 
             <div className="test-warning">
-                 *Please Use the following test credit card for payment*
+                *Please Use the following test credit card for payment*
                  <br />
                  4242 4242 4242 4242 -Exp: 01/20 - CVV: 123
             </div>
