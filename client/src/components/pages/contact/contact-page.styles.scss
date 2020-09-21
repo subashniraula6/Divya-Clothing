@@ -1,11 +1,36 @@
 .contact-page {
-    color: red;
     display: block;
+    margin-top: 100px;
 
-    .email-icon {
-        width: 50px;
+    .email {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .email-icon {
+            width: 60px;
+            margin: 10px;
+        }
+
+        .emailLabel {
+            font-size: 20px;
+        }
     }
-    .phone-icon {
-        width: 50px;
+
+    .phone {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .phone-icon {
+            width: 50px;
+            margin: 10px
+        }
+
+        .phoneLabel {
+            font-size: 20px
+        }
     }
 }
