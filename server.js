@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
-if(process.env.NODE_ENV !== 'production'){
+if(process.env.NODE_ENV === 'production'){
     app.use(express.static(path.join(__dirname, 'client/build')))
     app.get('*', function(req, res){
         res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
